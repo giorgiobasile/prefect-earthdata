@@ -13,7 +13,7 @@ with open("README.md") as readme_file:
 
 setup(
     name="prefect-eo",
-    description="Prefect integrations with Earth Observation (EO) data providers and processing services.",
+    description="Prefect integrations with Earth Observation (EO) data providers.",
     license="Apache License 2.0",
     author="Giorgio Basile",
     author_email="giorgiobasile@users.noreply.github.com",

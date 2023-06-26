@@ -20,7 +20,7 @@
 
 Visit the full docs [here](https://giorgiobasile.github.io/prefect-eo) to see additional examples and the API reference.
 
-Prefect integrations with Earth Observation (EO) data providers and processing services.
+Prefect integrations with Earth Observation (EO) data providers.
 
 
 <!--- ### Add a real-world example of how to use this Collection here
