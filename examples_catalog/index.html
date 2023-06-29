@@ -14,7 +14,7 @@
         <link rel="prev" href="../blocks_catalog/">
       
       
-        <link rel="next" href="../tasks/">
+        <link rel="next" href="../earthdata/">
       
       <link rel="icon" href="../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.17">
@@ -295,9 +295,40 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Examples Catalog
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Examples Catalog
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#earthdata-module" class="md-nav__link">
+    Earthdata Module
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -338,22 +369,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../tasks/" class="md-nav__link">
-        Tasks
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../flows/" class="md-nav__link">
-        Flows
+      <a href="../earthdata/" class="md-nav__link">
+        Earthdata
       </a>
     </li>
   
@@ -386,6 +403,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#earthdata-module" class="md-nav__link">
+    Earthdata Module
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -401,6 +433,13 @@
 
 <h1 id="examples-catalog">Examples Catalog</h1>
 <p>Below is a list of examples for <code>prefect-eo</code>.</p>
+<h2 id="earthdata-module"><a class="autorefs autorefs-internal" href="../earthdata/#prefect_eo.earthdata">Earthdata Module</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">earthdata_credentials_block</span> <span class="o">=</span> <span class="n">EarthdataCredentials</span><span class="p">(</span>
+    <span class="n">earthdata_username</span> <span class="o">=</span> <span class="s2">&quot;username&quot;</span><span class="p">,</span>
+    <span class="n">earthdata_password</span> <span class="o">=</span> <span class="s2">&quot;password&quot;</span>
+<span class="p">)</span>
+<span class="n">earthdata_auth</span> <span class="o">=</span> <span class="n">earthdata_credentials_block</span><span class="o">.</span><span class="n">login</span><span class="p">()</span>
+</code></pre></div>
 
 
 

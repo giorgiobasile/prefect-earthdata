@@ -8,10 +8,10 @@
       
       
       
-        <link rel="canonical" href="https://giorgiobasile.github.io/prefect-eo/flows/">
+        <link rel="canonical" href="https://giorgiobasile.github.io/prefect-eo/earthdata/">
       
       
-        <link rel="prev" href="../tasks/">
+        <link rel="prev" href="../examples_catalog/">
       
       
       <link rel="icon" href="../img/favicon.ico">
@@ -19,7 +19,7 @@
     
     
       
-        <title>Flows - prefect-eo</title>
+        <title>Earthdata - prefect-eo</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#prefect_eo.flows" class="md-skip">
+        <a href="#prefect_eo.earthdata" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Flows
+              Earthdata
             
           </span>
         </div>
@@ -326,20 +326,6 @@
               
   
   
-  
-    <li class="md-nav__item">
-      <a href="../tasks/" class="md-nav__link">
-        Tasks
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
     
   
   
@@ -352,12 +338,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Flows
+          Earthdata
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Flows
+        Earthdata
       </a>
       
         
@@ -376,14 +362,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prefect_eo.flows-classes" class="md-nav__link">
+  <a href="#prefect_eo.earthdata-classes" class="md-nav__link">
     Classes
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prefect_eo.flows-functions" class="md-nav__link">
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prefect_eo.earthdata.EarthdataCredentials" class="md-nav__link">
+    EarthdataCredentials
+  </a>
+  
+    <nav class="md-nav" aria-label="EarthdataCredentials">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prefect_eo.earthdata.EarthdataCredentials-functions" class="md-nav__link">
     Functions
   </a>
   
@@ -391,9 +386,19 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prefect_eo.flows.hello_and_goodbye" class="md-nav__link">
-    hello_and_goodbye()
+  <a href="#prefect_eo.earthdata.EarthdataCredentials.login" class="md-nav__link">
+    login()
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -444,14 +449,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prefect_eo.flows-classes" class="md-nav__link">
+  <a href="#prefect_eo.earthdata-classes" class="md-nav__link">
     Classes
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prefect_eo.flows-functions" class="md-nav__link">
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prefect_eo.earthdata.EarthdataCredentials" class="md-nav__link">
+    EarthdataCredentials
+  </a>
+  
+    <nav class="md-nav" aria-label="EarthdataCredentials">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prefect_eo.earthdata.EarthdataCredentials-functions" class="md-nav__link">
     Functions
   </a>
   
@@ -459,9 +473,19 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prefect_eo.flows.hello_and_goodbye" class="md-nav__link">
-    hello_and_goodbye()
+  <a href="#prefect_eo.earthdata.EarthdataCredentials.login" class="md-nav__link">
+    login()
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -492,15 +516,15 @@
 
 
 
-<h1 id="prefect_eo.flows" class="doc doc-heading">
-          <code>prefect_eo.flows</code>
+<h1 id="prefect_eo.earthdata" class="doc doc-heading">
+          <code>prefect_eo.earthdata</code>
 
 
 </h1>
 
   <div class="doc doc-contents first">
   
-      <p>This is an example flows module</p>
+      <p>Module handling NASA Earthdata credentials</p>
 
   
 
@@ -511,26 +535,42 @@
 
 
 
-<h2 id="prefect_eo.flows-classes">Classes</h2>
-<h2 id="prefect_eo.flows-functions">Functions</h2>
+<h2 id="prefect_eo.earthdata-classes">Classes</h2>
 
-<div class="doc doc-object doc-function">
-
+<div class="doc doc-object doc-class">
 
 
-<h3 id="prefect_eo.flows.hello_and_goodbye" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">hello_and_goodbye</span></code>
+
+<h3 id="prefect_eo.earthdata.EarthdataCredentials" class="doc doc-heading">
+        <code>EarthdataCredentials</code>
+
 
 </h3>
 
 
   <div class="doc doc-contents ">
-  
-      <p>Sample flow that says hello and goodbye!</p>
+      <p class="doc doc-class-bases">
+        Bases: <code><span title="prefect.blocks.core.Block">Block</span></code></p>
 
-      <details class="quote">
-        <summary>Source code in <code>prefect_eo/flows.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">11</span>
+  
+      <p>Block used to manage authentication with NASA Earthdata.
+NASA Earthdata authentication is handled via the <code>earthaccess</code> module.
+Refer to the <a href="https://nsidc.github.io/earthaccess/">earthaccess docs</a>
+for more info about the possible credential configurations.</p>
+
+<details class="example" open>
+  <summary>Example</summary>
+  <p>Load stored Earthdata credentials:
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">prefect_eo</span> <span class="kn">import</span> <span class="n">EarthdataCredentials</span>
+
+<span class="n">ed_credentials_block</span> <span class="o">=</span> <span class="n">EarthdataCredentials</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;BLOCK_NAME&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+</details>
+
+        <details class="quote">
+          <summary>Source code in <code>prefect_eo/earthdata.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">10</span>
+<span class="normal">11</span>
 <span class="normal">12</span>
 <span class="normal">13</span>
 <span class="normal">14</span>
@@ -541,23 +581,184 @@
 <span class="normal">19</span>
 <span class="normal">20</span>
 <span class="normal">21</span>
-<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@flow</span>
-<span class="k">def</span> <span class="nf">hello_and_goodbye</span><span class="p">():</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">EarthdataCredentials</span><span class="p">(</span><span class="n">Block</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Sample flow that says hello and goodbye!</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">EoBlock</span><span class="o">.</span><span class="n">seed_value_for_example</span><span class="p">()</span>
-    <span class="n">block</span> <span class="o">=</span> <span class="n">EoBlock</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;sample-block&quot;</span><span class="p">)</span>
+<span class="sd">    Block used to manage authentication with NASA Earthdata.</span>
+<span class="sd">    NASA Earthdata authentication is handled via the `earthaccess` module.</span>
+<span class="sd">    Refer to the [earthaccess docs](https://nsidc.github.io/earthaccess/)</span>
+<span class="sd">    for more info about the possible credential configurations.</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="n">hello_prefect_eo</span><span class="p">())</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The block&#39;s value: </span><span class="si">{</span><span class="n">block</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">goodbye_prefect_eo</span><span class="p">())</span>
-    <span class="k">return</span> <span class="s2">&quot;Done&quot;</span>
+<span class="sd">    Example:</span>
+<span class="sd">        Load stored Earthdata credentials:</span>
+<span class="sd">        ```python</span>
+<span class="sd">        from prefect_eo import EarthdataCredentials</span>
+
+<span class="sd">        ed_credentials_block = EarthdataCredentials.load(&quot;BLOCK_NAME&quot;)</span>
+<span class="sd">        ```</span>
+<span class="sd">    &quot;&quot;&quot;</span>  <span class="c1"># noqa E501</span>
+
+    <span class="n">_logo_url</span> <span class="o">=</span> <span class="s2">&quot;https://yt3.googleusercontent.com/ytc/AGIKgqPjIUeAw3_hrkHWZgixdwD5jc-hTWweoCA6bJMhUg=s176-c-k-c0x00ffffff-no-rj&quot;</span>  <span class="c1"># noqa</span>
+    <span class="n">_block_type_name</span> <span class="o">=</span> <span class="s2">&quot;NASA Earthdata Credentials&quot;</span>
+    <span class="n">_documentation_url</span> <span class="o">=</span> <span class="s2">&quot;https://nsidc.github.io/earthaccess/&quot;</span>  <span class="c1"># noqa</span>
+
+    <span class="n">earthdata_username</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="n">default</span><span class="o">=...</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;The Earthdata username of a specific account.&quot;</span><span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Earthdata username&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">earthdata_password</span><span class="p">:</span> <span class="n">SecretStr</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
+        <span class="n">default</span><span class="o">=...</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;The Earthdata password of a specific account.&quot;</span><span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Earthdata password&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">login</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">earthaccess</span><span class="o">.</span><span class="n">Auth</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns an authenticated session with NASA Earthdata</span>
+
+<span class="sd">        Example:</span>
+<span class="sd">            ```python</span>
+<span class="sd">            earthdata_credentials_block = EarthdataCredentials(</span>
+<span class="sd">                earthdata_username = &quot;username&quot;,</span>
+<span class="sd">                earthdata_password = &quot;password&quot;</span>
+<span class="sd">            )</span>
+<span class="sd">            earthdata_auth = earthdata_credentials_block.login()</span>
+<span class="sd">            ```</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;&quot;&quot;&quot;</span>
+
+        <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;EARTHDATA_USERNAME&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">earthdata_username</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;EARTHDATA_PASSWORD&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">earthdata_password</span><span class="o">.</span><span class="n">get_secret_value</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">earthaccess</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s2">&quot;environment&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<h4 id="prefect_eo.earthdata.EarthdataCredentials-functions">Functions</h4>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h5 id="prefect_eo.earthdata.EarthdataCredentials.login" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">login</span></code>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Returns an authenticated session with NASA Earthdata</p>
+
+<details class="example" open>
+  <summary>Example</summary>
+  <div class="highlight"><pre><span></span><code><span class="n">earthdata_credentials_block</span> <span class="o">=</span> <span class="n">EarthdataCredentials</span><span class="p">(</span>
+    <span class="n">earthdata_username</span> <span class="o">=</span> <span class="s2">&quot;username&quot;</span><span class="p">,</span>
+    <span class="n">earthdata_password</span> <span class="o">=</span> <span class="s2">&quot;password&quot;</span>
+<span class="p">)</span>
+<span class="n">earthdata_auth</span> <span class="o">=</span> <span class="n">earthdata_credentials_block</span><span class="o">.</span><span class="n">login</span><span class="p">()</span>
+</code></pre></div>
+</details>
+      <details class="quote">
+        <summary>Source code in <code>prefect_eo/earthdata.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">login</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">earthaccess</span><span class="o">.</span><span class="n">Auth</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns an authenticated session with NASA Earthdata</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        ```python</span>
+<span class="sd">        earthdata_credentials_block = EarthdataCredentials(</span>
+<span class="sd">            earthdata_username = &quot;username&quot;,</span>
+<span class="sd">            earthdata_password = &quot;password&quot;</span>
+<span class="sd">        )</span>
+<span class="sd">        earthdata_auth = earthdata_credentials_block.login()</span>
+<span class="sd">        ```</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;&quot;&quot;&quot;</span>
+
+    <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;EARTHDATA_USERNAME&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">earthdata_username</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;EARTHDATA_PASSWORD&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">earthdata_password</span><span class="o">.</span><span class="n">get_secret_value</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">earthaccess</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s2">&quot;environment&quot;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
       </details>
   </div>
 
 </div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
 
 
 
