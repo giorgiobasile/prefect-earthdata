@@ -2,6 +2,10 @@ import pytest
 from prefect.testing.utilities import prefect_test_harness
 
 
+def pytest_configure(config):
+    config.addinivalue_line("markers", "flaky: mark test as flaky")
+
+
 @pytest.fixture(scope="session", autouse=True)
 def prefect_db():
     """
