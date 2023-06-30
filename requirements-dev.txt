@@ -13,3 +13,4 @@ interrogate
 coverage
 pillow
 requests_mock
+importlib_resources
