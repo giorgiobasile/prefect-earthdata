@@ -1,0 +1,431 @@
+{
+  "hits": 760,
+  "took": 1450,
+  "items": [
+    {
+      "meta": {
+        "concept-type": "granule",
+        "concept-id": "G2166695839-NSIDC_CPRD",
+        "revision-id": 1,
+        "native-id": "ATL08_20181105083647_05760107_005_01.h5",
+        "provider-id": "NSIDC_CPRD",
+        "format": "application/iso:smap+xml",
+        "revision-date": "2021-11-16T00:43:39.912Z"
+      },
+      "umm": {
+        "TemporalExtent": {
+          "RangeDateTime": {
+            "BeginningDateTime": "2018-11-05T08:38:40.137Z",
+            "EndingDateTime": "2018-11-05T08:40:18.214Z"
+          }
+        },
+        "OrbitCalculatedSpatialDomains": [
+          {
+            "OrbitNumber": 777,
+            "EquatorCrossingLongitude": 98.76096834651058,
+            "EquatorCrossingDateTime": "2018-11-05T07:56:47.707Z"
+          }
+        ],
+        "GranuleUR": "ATL08_20181105083647_05760107_005_01.h5",
+        "SpatialExtent": {
+          "HorizontalSpatialDomain": {
+            "Orbit": {
+              "AscendingCrossing": 98.76096834651058,
+              "StartLatitude": 27.0,
+              "StartDirection": "D",
+              "EndLatitude": 0.0,
+              "EndDirection": "D"
+            }
+          }
+        },
+        "ProviderDates": [
+          {
+            "Date": "2021-11-16T00:43:38.395Z",
+            "Type": "Insert"
+          },
+          {
+            "Date": "2021-11-16T00:43:38.395Z",
+            "Type": "Update"
+          }
+        ],
+        "CollectionReference": {
+          "EntryTitle": "ATLAS/ICESat-2 L3A Land and Vegetation Height V005"
+        },
+        "RelatedUrls": [
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01.h5",
+            "Type": "GET DATA",
+            "MimeType": "application/x-hdf5"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01.h5.dmrpp",
+            "Type": "VIEW RELATED INFORMATION",
+            "MimeType": "none"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01.iso.xml",
+            "Type": "VIEW RELATED INFORMATION",
+            "MimeType": "text/xml"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.default.default1.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.default.default2.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1l.groundtrack.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1l.h_canopy_abs.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1l.h_te_median.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1l.n_ca_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1l.n_te_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1r.groundtrack.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1r.h_canopy_abs.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1r.h_te_median.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1r.n_ca_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1r.n_te_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2l.groundtrack.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2l.h_canopy_abs.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2l.h_te_median.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2l.n_ca_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2l.n_te_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2r.groundtrack.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2r.h_canopy_abs.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2r.h_te_median.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2r.n_ca_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2r.n_te_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3l.groundtrack.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3l.h_canopy_abs.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3l.h_te_median.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3l.n_ca_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3l.n_te_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3r.groundtrack.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3r.h_canopy_abs.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3r.h_te_median.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3r.n_ca_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3r.n_te_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01.h5",
+            "Type": "GET DATA VIA DIRECT ACCESS",
+            "MimeType": "application/x-hdf5"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01.h5.dmrpp",
+            "Type": "VIEW RELATED INFORMATION",
+            "MimeType": "none"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01.iso.xml",
+            "Type": "VIEW RELATED INFORMATION",
+            "MimeType": "text/xml"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.default.default1.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.default.default2.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1l.groundtrack.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1l.h_canopy_abs.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1l.h_te_median.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1l.n_ca_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1l.n_te_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1r.groundtrack.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1r.h_canopy_abs.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1r.h_te_median.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1r.n_ca_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt1r.n_te_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2l.groundtrack.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2l.h_canopy_abs.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2l.h_te_median.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2l.n_ca_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2l.n_te_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2r.groundtrack.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2r.h_canopy_abs.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2r.h_te_median.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2r.n_ca_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt2r.n_te_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3l.groundtrack.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3l.h_canopy_abs.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3l.h_te_median.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3l.n_ca_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3l.n_te_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3r.groundtrack.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3r.h_canopy_abs.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3r.h_te_median.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3r.n_ca_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          },
+          {
+            "URL": "s3://nsidc-cumulus-prod-public/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01_BRW.gt3r.n_te_photons.jpg",
+            "Type": "GET RELATED VISUALIZATION",
+            "MimeType": "image/jpeg"
+          }
+        ],
+        "DataGranule": {
+          "DayNightFlag": "Unspecified",
+          "Identifiers": [
+            {
+              "Identifier": "ATL08_20181105083647_05760107_005_01.h5",
+              "IdentifierType": "ProducerGranuleId"
+            }
+          ],
+          "ProductionDateTime": "2021-09-05T19:15:06.000Z",
+          "ArchiveAndDistributionInformation": [
+            {
+              "Name": "Not provided",
+              "Size": 14.847737312316895,
+              "SizeUnit": "NA"
+            }
+          ]
+        },
+        "MetadataSpecification": {
+          "URL": "https://cdn.earthdata.nasa.gov/umm/granule/v1.6.4",
+          "Name": "UMM-G",
+          "Version": "1.6.4"
+        }
+      }
+    }
+  ]
+}
