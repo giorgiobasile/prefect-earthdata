@@ -1,4 +1,4 @@
-"""Module handling NASA Earthdata credentials"""
+"""Module handling NASA Earthdata credentials and tasks"""
 
 import os
 from typing import List
@@ -70,7 +70,7 @@ async def earthdata_search_data(
 ) -> List[earthaccess.results.DataGranule]:
     """
     Searches for data on NASA Earthdata using the
-    c function
+    [`earthaccess.search_data()`](https://nsidc.github.io/earthaccess/user-reference/api/api/#earthaccess.api.search_data) function
 
     Args:
         credentials: An `EarthdataCredentials` object used
