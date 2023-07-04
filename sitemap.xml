@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://giorgiobasile.github.io/prefect-eo/</loc>
-         <lastmod>2023-07-03</lastmod>
+         <lastmod>2023-07-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://giorgiobasile.github.io/prefect-eo/blocks_catalog/</loc>
-         <lastmod>2023-07-03</lastmod>
+         <lastmod>2023-07-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://giorgiobasile.github.io/prefect-eo/earthdata/</loc>
-         <lastmod>2023-07-03</lastmod>
+         <lastmod>2023-07-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://giorgiobasile.github.io/prefect-eo/examples_catalog/</loc>
-         <lastmod>2023-07-03</lastmod>
+         <lastmod>2023-07-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
