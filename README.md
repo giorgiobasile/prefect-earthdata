@@ -1,4 +1,4 @@
-# prefect-eo
+# prefect-eo 🌍🛰️
 
 <p align="center">
     <!--- Insert a cover image here -->
