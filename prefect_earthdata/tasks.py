@@ -1,71 +1,15 @@
-"""Module handling NASA Earthdata credentials and tasks"""
+"""Module handling Prefect tasks interacting with NASA Earthdata"""
 
-import os
 from typing import List
 
 import earthaccess
 from prefect import get_run_logger, task
-from prefect.blocks.core import Block
-from pydantic import Field, SecretStr
 
-
-class EarthdataCredentials(Block):
-    """
-    Block used to manage authentication with NASA Earthdata.
-    NASA Earthdata authentication is handled via the `earthaccess` module.
-    Refer to the [earthaccess docs](https://nsidc.github.io/earthaccess/)
-    for more info about the possible credential configurations.
-
-    Example:
-        Load stored Earthdata credentials:
-        ```python
-        from prefect_eo import EarthdataCredentials
-
-        ed_credentials_block = EarthdataCredentials.load("BLOCK_NAME")
-        ```
-    """  # noqa E501
-
-    _logo_url = "https://yt3.googleusercontent.com/ytc/AGIKgqPjIUeAw3_hrkHWZgixdwD5jc-hTWweoCA6bJMhUg=s176-c-k-c0x00ffffff-no-rj"  # noqa
-    _block_type_name = "NASA Earthdata Credentials"
-    _documentation_url = "https://nsidc.github.io/earthaccess/"  # noqa
-
-    earthdata_username: str = Field(
-        default=...,
-        description="The Earthdata username of a specific account.",
-        title="Earthdata username",
-    )
-    earthdata_password: SecretStr = Field(
-        default=...,
-        description="The Earthdata password of a specific account.",
-        title="Earthdata password",
-    )
-
-    def login(self) -> earthaccess.Auth:
-        """
-        Returns an authenticated session with NASA Earthdata using
-        the [`earthaccess.login()`](https://nsidc.github.io/earthaccess/user-reference/api/api/#earthaccess.api.login) function
-
-        Example:
-            Authenticates with NASA Earthdata using the credentials.
-
-            ```python
-            from prefect_eo.earthdata import EarthdataCredentials
-
-            earthdata_credentials_block = EarthdataCredentials(
-                earthdata_username = "username",
-                earthdata_password = "password"
-            )
-            earthdata_auth = earthdata_credentials_block.login()
-            ```
-        """  # noqa E501
-
-        os.environ["EARTHDATA_USERNAME"] = self.earthdata_username
-        os.environ["EARTHDATA_PASSWORD"] = self.earthdata_password.get_secret_value()
-        return earthaccess.login(strategy="environment")
+from prefect_earthdata.credentials import EarthdataCredentials
 
 
 @task
-async def earthdata_search_data(
+async def search_data(
     credentials: EarthdataCredentials, *args, **kwargs
 ) -> List[earthaccess.results.DataGranule]:
     """
@@ -88,24 +32,24 @@ async def earthdata_search_data(
 
         ```python
         from prefect import flow
-        from prefect_eo.earthdata import EarthdataCredentials
-        from prefect_eo.earthdata import earthdata_search_data
+        from prefect_earthdata.credentials import EarthdataCredentials
+        from prefect_earthdata.tasks import search_data
 
         @flow
         def example_earthdata_search_flow():
 
-            credentials = EarthdataCredentials(
+            earthdata_credentials = EarthdataCredentials(
                 earthdata_userame = "username",
                 earthdata_password = "password"
             )
 
-            search_results = earthdata_search_data(
+            granules = search_data(
                 earthdata_credentials,
                 count=1,
                 short_name="ATL08",
                 bounding_box=(-92.86, 16.26, -91.58, 16.97),
             )
-            return search_results
+            return granules
 
         example_earthdata_search_flow()
         ```
@@ -122,9 +66,7 @@ async def earthdata_search_data(
 
 
 @task
-async def earthdata_download(
-    credentials: EarthdataCredentials, *args, **kwargs
-) -> List[str]:
+async def download(credentials: EarthdataCredentials, *args, **kwargs) -> List[str]:
     """
     Downloads data from NASA Earthdata using the
     [`earthaccess.download()`](https://nsidc.github.io/earthaccess/user-reference/api/api/#earthaccess.api.download) function
@@ -145,25 +87,27 @@ async def earthdata_download(
 
         ```python
         from prefect import flow
-        from prefect_eo.earthdata import EarthdataCredentials
-        from prefect_eo.earthdata import earthdata_search_data
+        from prefect_earthdata.credentials import EarthdataCredentials
+        from prefect_earthdata.tasks import search_data, download
 
         @flow
         def example_earthdata_download_flow():
 
-            credentials = EarthdataCredentials(
+            earthdata_credentials = EarthdataCredentials(
                 earthdata_userame = "username",
                 earthdata_password = "password"
             )
 
-            search_results = earthdata_search_data(
+            granules = search_data(
                 earthdata_credentials,
                 count=1,
                 short_name="ATL08",
                 bounding_box=(-92.86, 16.26, -91.58, 16.97),
             )
 
-            files = earthdata_download(
+            download_path = "/tmp"
+
+            files = download(
                 earthdata_credentials,
                 granules=granules,
                 local_path=download_path

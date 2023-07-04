@@ -9,8 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Added NASA Earthdata credentials block - [#4](https://github.com/giorgiobasile/prefect-eo/issues/4)
-- Added Prefect tasks to search and download data through NASA Earthdata - [#8](https://github.com/giorgiobasile/prefect-eo/issues/8)
+- Added NASA Earthdata credentials block - [#4](https://github.com/giorgiobasile/prefect-earthdata/issues/4)
+- Added Prefect tasks to search and download data through NASA Earthdata - [#8](https://github.com/giorgiobasile/prefect-earthdata/issues/8)
 
 ### Changed
 
