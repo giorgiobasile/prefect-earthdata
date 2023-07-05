@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://giorgiobasile.github.io/prefect-eo/</loc>
-         <lastmod>2023-07-04</lastmod>
+         <loc>https://giorgiobasile.github.io/prefect-earthdata/</loc>
+         <lastmod>2023-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://giorgiobasile.github.io/prefect-eo/blocks_catalog/</loc>
-         <lastmod>2023-07-04</lastmod>
+         <loc>https://giorgiobasile.github.io/prefect-earthdata/blocks_catalog/</loc>
+         <lastmod>2023-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://giorgiobasile.github.io/prefect-eo/earthdata/</loc>
-         <lastmod>2023-07-04</lastmod>
+         <loc>https://giorgiobasile.github.io/prefect-earthdata/credentials/</loc>
+         <lastmod>2023-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://giorgiobasile.github.io/prefect-eo/examples_catalog/</loc>
-         <lastmod>2023-07-04</lastmod>
+         <loc>https://giorgiobasile.github.io/prefect-earthdata/examples_catalog/</loc>
+         <lastmod>2023-07-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://giorgiobasile.github.io/prefect-earthdata/tasks/</loc>
+         <lastmod>2023-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
