@@ -9,9 +9,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Added NASA Earthdata credentials block - [#4](https://github.com/giorgiobasile/prefect-earthdata/issues/4)
-- Added Prefect tasks to search and download data through NASA Earthdata - [#8](https://github.com/giorgiobasile/prefect-earthdata/issues/8)
-
 ### Changed
 
 ### Deprecated
@@ -21,3 +18,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 ### Security
+
+## 0.1.0
+
+Released on July 5th, 2023.
+
+### Added
+
+- Added NASA Earthdata credentials block - [#4](https://github.com/giorgiobasile/prefect-earthdata/issues/4)
+- Added Prefect tasks to search and download data through NASA Earthdata - [#8](https://github.com/giorgiobasile/prefect-earthdata/issues/8)
