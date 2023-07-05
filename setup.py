@@ -12,13 +12,13 @@ with open("README.md") as readme_file:
     readme = readme_file.read()
 
 setup(
-    name="prefect-eo",
-    description="Prefect integrations with Earth Observation (EO) data providers.",
+    name="prefect-earthdata",
+    description="Prefect integrations with NASA Earthdata.",
     license="Apache License 2.0",
     author="Giorgio Basile",
     author_email="giorgiobasile@users.noreply.github.com",
     keywords="prefect",
-    url="https://github.com/giorgiobasile/prefect-eo",
+    url="https://github.com/giorgiobasile/prefect-earthdata",
     long_description=readme,
     long_description_content_type="text/markdown",
     version=versioneer.get_version(),
@@ -29,7 +29,7 @@ setup(
     extras_require={"dev": dev_requires},
     entry_points={
         "prefect.collections": [
-            "prefect_eo = prefect_eo",
+            "prefect_earthdata = prefect_earthdata",
         ]
     },
     classifiers=[

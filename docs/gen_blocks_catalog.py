@@ -11,7 +11,7 @@ from prefect.blocks.core import Block
 from prefect.utilities.dispatch import get_registry_for_type
 from prefect.utilities.importtools import from_qualified_name, to_qualified_name
 
-COLLECTION_SLUG = "prefect_eo"
+COLLECTION_SLUG = "prefect_earthdata"
 
 
 def find_module_blocks():
@@ -39,12 +39,12 @@ def insert_blocks_catalog(generated_file):
         dedent(
             f"""
             Below is a list of Blocks available for registration in
-            `prefect-eo`.
+            `prefect-earthdata`.
 
             To register blocks in this module to
             [view and edit them](https://docs.prefect.io/ui/blocks/)
             on Prefect Cloud, first [install the required packages](
-            https://giorgiobasile.github.io/prefect-eo/#installation),
+            https://giorgiobasile.github.io/prefect-earthdata/#installation),
             then
             ```bash
             prefect block register -m {COLLECTION_SLUG}

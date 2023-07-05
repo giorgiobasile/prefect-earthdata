@@ -4,4 +4,4 @@
 
 # Traceback / Example
 
-- [ ] I would like to [help contribute](https://giorgiobasile.github.io/prefect-eo/#contributing) a pull request to resolve this!
+- [ ] I would like to [help contribute](https://giorgiobasile.github.io/prefect-earthdata/#contributing) a pull request to resolve this!

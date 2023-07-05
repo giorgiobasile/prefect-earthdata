@@ -1,6 +1,6 @@
-site_name: prefect-eo
-site_url: https://giorgiobasile.github.io/prefect-eo
-repo_url: https://github.com/giorgiobasile/prefect-eo
+site_name: prefect-earthdata
+site_url: https://giorgiobasile.github.io/prefect-earthdata
+repo_url: https://github.com/giorgiobasile/prefect-earthdata
 edit_uri: edit/main/docs/
 theme:
   name: material
@@ -68,7 +68,7 @@ plugins:
             show_signature: False
             heading_level: 1
 watch:
-    - prefect_eo/
+    - prefect_earthdata/
     - README.md
 
 nav:
@@ -76,7 +76,8 @@ nav:
     - Blocks Catalog: blocks_catalog.md
     - Examples Catalog: examples_catalog.md
     - API Reference:
-      - NASA Earthdata: earthdata.md
+      - Credentials: credentials.md
+      - Tasks: tasks.md
     
 
 
