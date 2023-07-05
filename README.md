@@ -40,7 +40,7 @@ def example_earthdata_download_flow():
 
     logger = get_run_logger()
 
-    earthdata_credentials = EarthdataCredentials.load("earthdata-fdss")
+    earthdata_credentials = EarthdataCredentials.load("earthdata-credentials")
 
     granules = search_data(
         earthdata_credentials,
