@@ -80,7 +80,7 @@ async def download(credentials: EarthdataCredentials, *args, **kwargs) -> List[s
             to `earthaccess.download()`.
 
     Returns:
-        A list of `DataGranule` objects representing the search results.
+        List of downloaded files.
 
     Example:
         Searches and downloads granules through NASA Earthdata.
