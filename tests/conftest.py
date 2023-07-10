@@ -2,7 +2,7 @@ import json
 
 import pytest
 import requests_mock
-from importlib_resources import open_binary, open_text
+from importlib_resources import files
 from prefect.testing.utilities import prefect_test_harness
 
 from prefect_earthdata.credentials import EarthdataCredentials
@@ -55,8 +55,8 @@ def mock_earthdata_responses():
             status_code=200,
         )
 
-        with open_text(
-            "tests.data", "earthdata_search_response.json"
+        with files("tests.data").joinpath("earthdata_search_response.json").open(
+            "r"
         ) as search_data_response_file:
             search_data_response = json.load(search_data_response_file)
 
@@ -67,7 +67,9 @@ def mock_earthdata_responses():
             status_code=200,
         )
 
-        with open_binary("tests.data", "empty.h5") as download_response_file:
+        with files("tests.data").joinpath("empty.h5").open(
+            "rb"
+        ) as download_response_file:
             download_response = download_response_file.read()
         m.get(
             "https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2018/11/05/ATL08_20181105083647_05760107_005_01.h5",  # noqa E501
