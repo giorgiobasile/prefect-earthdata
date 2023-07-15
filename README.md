@@ -26,6 +26,15 @@ Prefect integrations with NASA Earthdata, taking advantage of the [`earthaccess`
 
 ## Getting started
 
+`prefect-earthdata` provides a Prefect credentials block and a few tasks to interact with
+NASA Earthdata. It does so by leveraging the `earthaccess` library and its API.
+
+Loading the `EarthdataCredentials` block with your credentials, corresponds to calling the [`earthaccess.login()`](https://nsidc.github.io/earthaccess/user-reference/api/api/#earthaccess.api.login) function.
+
+After that, all other `earthaccess` functions can be directly used, without having to login again.
+
+Nevertheless, a few tasks are provided to help taking full advantage of Prefect's observability features.
+
 ### Search and download on NASA Earthdata
 
 ```python
