@@ -15,7 +15,7 @@
       
       
       <link rel="icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.26e3688c.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.eebd395e.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
@@ -507,7 +507,7 @@
 
 
 <h1 id="prefect_earthdata.tasks" class="doc doc-heading">
-          <code>prefect_earthdata.tasks</code>
+            <code>prefect_earthdata.tasks</code>
 
 
 </h1>
@@ -528,6 +528,7 @@
 <h2 id="prefect_earthdata.tasks-classes">Classes</h2>
 <h2 id="prefect_earthdata.tasks-functions">Functions</h2>
 
+
 <div class="doc doc-object doc-function">
 
 
@@ -546,6 +547,8 @@
   
       <p>Downloads data from NASA Earthdata using the
 <a href="https://nsidc.github.io/earthaccess/user-reference/api/api/#earthaccess.api.download"><code>earthaccess.download()</code></a> function</p>
+
+
 
   <p><strong>Parameters:</strong></p>
   <table>
@@ -604,6 +607,8 @@ to <code>earthaccess.download()</code>.</p>
     </tbody>
   </table>
 
+
+
   <p><strong>Returns:</strong></p>
   <table>
     <thead>
@@ -661,9 +666,9 @@ to <code>earthaccess.download()</code>.</p>
 <span class="n">example_earthdata_download_flow</span><span class="p">()</span>
 </code></pre></div>
 </details>
-      <details class="quote">
-        <summary>Source code in <code>prefect_earthdata/tasks.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 68</span>
+          <details class="quote">
+            <summary>Source code in <code>prefect_earthdata/tasks.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 68</span>
 <span class="normal"> 69</span>
 <span class="normal"> 70</span>
 <span class="normal"> 71</span>
@@ -787,10 +792,11 @@ to <code>earthaccess.download()</code>.</p>
 
     <span class="k">return</span> <span class="n">earthaccess</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-      </details>
+          </details>
   </div>
 
 </div>
+
 
 <div class="doc doc-object doc-function">
 
@@ -810,6 +816,8 @@ to <code>earthaccess.download()</code>.</p>
   
       <p>Searches for data on NASA Earthdata using the
 <a href="https://nsidc.github.io/earthaccess/user-reference/api/api/#earthaccess.api.search_data"><code>earthaccess.search_data()</code></a> function</p>
+
+
 
   <p><strong>Parameters:</strong></p>
   <table>
@@ -868,6 +876,8 @@ to <code>earthaccess.search_data()</code>.</p>
     </tbody>
   </table>
 
+
+
   <p><strong>Returns:</strong></p>
   <table>
     <thead>
@@ -916,9 +926,9 @@ to <code>earthaccess.search_data()</code>.</p>
 <span class="n">example_earthdata_search_flow</span><span class="p">()</span>
 </code></pre></div>
 </details>
-      <details class="quote">
-        <summary>Source code in <code>prefect_earthdata/tasks.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">11</span>
+          <details class="quote">
+            <summary>Source code in <code>prefect_earthdata/tasks.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">11</span>
 <span class="normal">12</span>
 <span class="normal">13</span>
 <span class="normal">14</span>
@@ -1028,7 +1038,7 @@ to <code>earthaccess.search_data()</code>.</p>
 
     <span class="k">return</span> <span class="n">earthaccess</span><span class="o">.</span><span class="n">search_data</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-      </details>
+          </details>
   </div>
 
 </div>
