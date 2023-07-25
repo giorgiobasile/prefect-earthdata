@@ -17,6 +17,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Fixed wrong import of `EarthdataCredentials` in code examples - [#20](https://github.com/giorgiobasile/prefect-earthdata/issues/20)
+
 ### Security
 
 ## 0.1.0
