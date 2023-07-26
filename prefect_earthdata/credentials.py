@@ -20,7 +20,7 @@ class EarthdataCredentials(Block):
     Example:
         Load stored Earthdata credentials:
         ```python
-        from prefect_earthdata.credentials import EarthdataCredentials
+        from prefect_earthdata import EarthdataCredentials
 
         ed_credentials_block = EarthdataCredentials.load("BLOCK_NAME")
         ```
@@ -50,7 +50,7 @@ class EarthdataCredentials(Block):
             Authenticates with NASA Earthdata using the credentials.
 
             ```python
-            from prefect_earthdata.credentials import EarthdataCredentials
+            from prefect_earthdata import EarthdataCredentials
 
             earthdata_credentials_block = EarthdataCredentials(
                 earthdata_username = "username",
