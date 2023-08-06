@@ -17,7 +17,7 @@
         <link rel="next" href="../credentials/">
       
       <link rel="icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
@@ -472,31 +472,8 @@
 <span class="n">earthdata_auth</span> <span class="o">=</span> <span class="n">earthdata_credentials_block</span><span class="o">.</span><span class="n">login</span><span class="p">()</span>
 </code></pre></div>
 <h2 id="tasks-module"><a class="autorefs autorefs-internal" href="../tasks/#prefect_earthdata.tasks">Tasks Module</a></h2>
-<p>Searches granules through NASA Earthdata.</p>
+<p>Searches and downloads granules through NASA Earthdata.</p>
 <p><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">prefect</span> <span class="kn">import</span> <span class="n">flow</span>
-<span class="kn">from</span> <span class="nn">prefect_earthdata.credentials</span> <span class="kn">import</span> <span class="n">EarthdataCredentials</span>
-<span class="kn">from</span> <span class="nn">prefect_earthdata.tasks</span> <span class="kn">import</span> <span class="n">search_data</span>
-
-<span class="nd">@flow</span>
-<span class="k">def</span> <span class="nf">example_earthdata_search_flow</span><span class="p">():</span>
-
-    <span class="n">earthdata_credentials</span> <span class="o">=</span> <span class="n">EarthdataCredentials</span><span class="p">(</span>
-        <span class="n">earthdata_userame</span> <span class="o">=</span> <span class="s2">&quot;username&quot;</span><span class="p">,</span>
-        <span class="n">earthdata_password</span> <span class="o">=</span> <span class="s2">&quot;password&quot;</span>
-    <span class="p">)</span>
-
-    <span class="n">granules</span> <span class="o">=</span> <span class="n">search_data</span><span class="p">(</span>
-        <span class="n">earthdata_credentials</span><span class="p">,</span>
-        <span class="n">count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-        <span class="n">short_name</span><span class="o">=</span><span class="s2">&quot;ATL08&quot;</span><span class="p">,</span>
-        <span class="n">bounding_box</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">92.86</span><span class="p">,</span> <span class="mf">16.26</span><span class="p">,</span> <span class="o">-</span><span class="mf">91.58</span><span class="p">,</span> <span class="mf">16.97</span><span class="p">),</span>
-    <span class="p">)</span>
-    <span class="k">return</span> <span class="n">granules</span>
-
-<span class="n">example_earthdata_search_flow</span><span class="p">()</span>
-</code></pre></div>
-Searches and downloads granules through NASA Earthdata.</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">prefect</span> <span class="kn">import</span> <span class="n">flow</span>
 <span class="kn">from</span> <span class="nn">prefect_earthdata.credentials</span> <span class="kn">import</span> <span class="n">EarthdataCredentials</span>
 <span class="kn">from</span> <span class="nn">prefect_earthdata.tasks</span> <span class="kn">import</span> <span class="n">search_data</span><span class="p">,</span> <span class="n">download</span>
 
@@ -526,6 +503,29 @@ Searches and downloads granules through NASA Earthdata.</p>
     <span class="k">return</span> <span class="n">granules</span><span class="p">,</span> <span class="n">files</span>
 
 <span class="n">example_earthdata_download_flow</span><span class="p">()</span>
+</code></pre></div>
+Searches granules through NASA Earthdata.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">prefect</span> <span class="kn">import</span> <span class="n">flow</span>
+<span class="kn">from</span> <span class="nn">prefect_earthdata.credentials</span> <span class="kn">import</span> <span class="n">EarthdataCredentials</span>
+<span class="kn">from</span> <span class="nn">prefect_earthdata.tasks</span> <span class="kn">import</span> <span class="n">search_data</span>
+
+<span class="nd">@flow</span>
+<span class="k">def</span> <span class="nf">example_earthdata_search_flow</span><span class="p">():</span>
+
+    <span class="n">earthdata_credentials</span> <span class="o">=</span> <span class="n">EarthdataCredentials</span><span class="p">(</span>
+        <span class="n">earthdata_userame</span> <span class="o">=</span> <span class="s2">&quot;username&quot;</span><span class="p">,</span>
+        <span class="n">earthdata_password</span> <span class="o">=</span> <span class="s2">&quot;password&quot;</span>
+    <span class="p">)</span>
+
+    <span class="n">granules</span> <span class="o">=</span> <span class="n">search_data</span><span class="p">(</span>
+        <span class="n">earthdata_credentials</span><span class="p">,</span>
+        <span class="n">count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">short_name</span><span class="o">=</span><span class="s2">&quot;ATL08&quot;</span><span class="p">,</span>
+        <span class="n">bounding_box</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">92.86</span><span class="p">,</span> <span class="mf">16.26</span><span class="p">,</span> <span class="o">-</span><span class="mf">91.58</span><span class="p">,</span> <span class="mf">16.97</span><span class="p">),</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="n">granules</span>
+
+<span class="n">example_earthdata_search_flow</span><span class="p">()</span>
 </code></pre></div>
 
 
