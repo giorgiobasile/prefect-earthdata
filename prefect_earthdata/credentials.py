@@ -17,6 +17,10 @@ class EarthdataCredentials(Block):
     Refer to the [earthaccess docs](https://nsidc.github.io/earthaccess/)
     for more info about the possible credential configurations.
 
+    Args:
+        earthdata_username (str): The Earthdata username of a specific account.
+        earthdata_password (str): The Earthdata password of a specific account.
+
     Example:
         Load stored Earthdata credentials:
         ```python
