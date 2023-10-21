@@ -17,11 +17,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Fix pydantic imports to handle v2 support from Prefect - [#30](https://github.com/giorgiobasile/prefect-earthdata/pull/30)
-
 ### Security
 
+## 0.1.3
+
+Released on October 21st, 2023.
+
+### Fixed
+
+- Fix pydantic imports to handle v2 support from Prefect - [#30](https://github.com/giorgiobasile/prefect-earthdata/pull/30)
+
 ## 0.1.2
+
+Released on July 26th, 2023.
 
 ### Fixed
 
