@@ -22,7 +22,6 @@ Visit the full docs [here](https://giorgiobasile.github.io/prefect-earthdata) to
 
 Prefect integrations with NASA Earthdata, taking advantage of the [`earthaccess`](https://nsidc.github.io/earthaccess/) library.
 
-<a href="https://urs.earthdata.nasa.gov"><img src="https://auth.ops.maap-project.org/cas/images/urs-logo.png" /></a>
 
 ## Getting started
 
