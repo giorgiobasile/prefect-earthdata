@@ -17,6 +17,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Handle earthaccess returning full file paths on download since >=0.7.0 - [#35](https://github.com/giorgiobasile/prefect-earthdata/pull/35)
+
 ### Security
 
 ## 0.1.3

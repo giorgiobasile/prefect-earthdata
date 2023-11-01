@@ -22,8 +22,12 @@ def test_search_data_and_download(earthdata_credentials_mock):  # noqa
 
     with TemporaryDirectory() as temp_dir:
         with prefect_test_harness():
+            exp_files = [str(Path(temp_dir, "ATL08_20181105083647_05760107_005_01.h5"))]
+
             granules, files = test_flow(temp_dir)
             assert isinstance(granules, list)
             assert len(granules) == 1
-            assert files == ["ATL08_20181105083647_05760107_005_01.h5"]
-            assert Path(temp_dir, "ATL08_20181105083647_05760107_005_01.h5").exists()
+
+            assert files == exp_files
+            for file in files:
+                assert Path(file).exists()
