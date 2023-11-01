@@ -1,2 +1,2 @@
 prefect>=2.0.0
-earthaccess
+earthaccess>=0.7.0
