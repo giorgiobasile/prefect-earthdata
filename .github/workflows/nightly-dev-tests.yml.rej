@@ -1,0 +1,13 @@
+diff a/.github/workflows/nightly-dev-tests.yml b/.github/workflows/nightly-dev-tests.yml	(rejected hunks)
+@@ -11,9 +11,10 @@ jobs:
+     strategy:
+       matrix:
+         python-version:
+-          - "3.8"
+           - "3.9"
+           - "3.10"
++          - "3.11"
++          - "3.12"
+       fail-fast: false
+     steps:
+       - uses: actions/checkout@v3
