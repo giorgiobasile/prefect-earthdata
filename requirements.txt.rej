@@ -1,0 +1,4 @@
+diff a/requirements.txt b/requirements.txt	(rejected hunks)
+@@ -1 +1 @@
+-prefect>=2.0.0
++prefect<3.0.0
